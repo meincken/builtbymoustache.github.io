@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Officers - Royal Marines</title>
+	<link rel="stylesheet" href="../css/rm.css" />
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+				$("#contentBlock").html($("#officerLnk").text());
+				$("#commando").hover(function() {
+						$("#contentBlock").html($("#commandoLnk").text());
+					}
+				);
+				$("#officer").hover(function() {
+						$("#contentBlock").html($("#officerLnk").text());
+					}
+				);
+				$("#reservist").hover(function() {
+						$("#contentBlock").html($("#reservistLnk").text());
+					}
+				);
+		});
+	</script>
+</head>
+<body class="officer">
+<div id="horizon">
+	<div id="container">
+		<div class="header">
+			<h1 id="logo">Royal Marines Commando - It's a state of mind</h1>
+			<div class="contact">
+				<h2>Careers enquiries: <span>08456 00 14 44</span></h2>
+			</div>
+			<img src="../img/royal-navy-logo.png"/>
+		</div>
+		<div class="clear"></div>
+
+
+		<div class="content">
+		<h2>Get inside the Green Beret</h2>
+
+		<h3>As a Royal Marines Officer you'll...</h3>
+		<div class="contentText">
+			<p>...Be responsible for some of the most highly trained men in the world, leading them and keeping them focused, fit and ready for anything.</p>
+			<p>...Fight alongside your men, relying on your training to bring out the best in them under the most extreme pressures.</p>
+			<p>...Share your men's highs and lows, building the trust and teamwork that's essential to the Royal Marines' effectiveness as a fighting force.</p>
+			<div class="btn"><a class="alreadyHaveIt" href="greenberet.html">You may already have it</a></div>
+		</div>
+
+		<div class="roles">
+			<p>Choose a different role:<span id="contentBlock"></span></p>
+			<ul id="chooseRole">
+				<li id="commando"><a href="../royalmarinescommando/index.html">Commando</a></li>
+				<li id="officer"><a class="active" href="../royalmarinesofficer/index.html">Officer</a></li>
+				<li id="reservist"><a href="../royalmarinesreservist/index.html">Reservist</a></li>
+			</ul>
+			<div class="contentHidden" id="commandoLnk"> Commando</div>
+			<div class="contentHidden" id="officerLnk"> Officer</div>
+			<div class="contentHidden" id="reservistLnk"> Reservist</div>
+		</div>
+		<ul class="links">
+			<li><a class="join" target="_blank" href="#">Join Today</a></li>
+			<li><a class="brochure" target="_blank" href="#">Download a brochure</a></li>
+			<li class="marginLeft"><a class="facebook" target="_blank" href="#">facebook</a></li>
+			<li class="last"><a class="youTube" target="_blank" href="#">youtube</a></li>
+		</ul>
+
+	</div>
+	<!-- end .container-->
+</div>
+</body>
+</html>

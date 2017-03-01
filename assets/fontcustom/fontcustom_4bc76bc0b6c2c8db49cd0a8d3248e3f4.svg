@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2016-7-29: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20160407 at Fri Jul 29 18:37:46 2016
+ By Nick Meincken
+Copyright (c) 2016, Nick Meincken
+</metadata>
+<defs>
+<font id="fontcustom" horiz-adv-x="200" >
+  <font-face 
+    font-family="fontcustom"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 139.712 512 244.288"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F101"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " 
+ />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" horiz-adv-x="512" 
+d="M238.454 163.449l-123.878 -23.7285l-114.576 104.567l112.533 -66.8125l115.605 17.9756s12.3838 3.09766 16.5205 -10.3154c4.11914 -13.4219 -6.20508 -21.6865 -6.20508 -21.6865zM273.537 163.449c0 0 -10.3242 8.26465 -6.17871 21.6953
+c4.12793 13.4043 16.5195 10.3154 16.5195 10.3154l115.598 -17.9756l112.524 66.7949l-114.584 -104.567z" />
+  </font>
+</defs></svg>

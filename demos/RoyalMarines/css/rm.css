@@ -1,0 +1,300 @@
+@import "reset.css";
+@import "text.css";
+/*Standard entities*/
+body {
+	color: #FFF;
+	background:#000;
+	font-size: 100%;
+	padding: 20px 0 40px;
+}
+a:active,
+a:hover,
+a:focus {
+	outline:none;
+}
+p {
+	overflow: hidden;
+	padding: 0 0 20px;
+	font-size:14px;
+	font-weight:bold;
+}
+body.commando #container {background:#000 url(../img/backgrounds/commando-land-bg.jpg) no-repeat}
+body.commandoLinks #container {background:#000 url(../img/backgrounds/commando-link-bg.jpg) no-repeat}
+body.officer #container {background:#000 url(../img/backgrounds/officer-land-bg.jpg) no-repeat}
+body.officerLinks #container {background:#000 url(../img/backgrounds/officer-link-bg.jpg) no-repeat}
+body.reservist #container {background:#000 url(../img/backgrounds/reservist-land-bg.jpg) no-repeat}
+body.reservistLinks #container {background:#000 url(../img/backgrounds/reservist-link-bg.jpg) no-repeat}
+
+#horizon {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	display: block
+}
+ 
+#container {
+	margin-left: -500px;
+	position: absolute;
+	top: -290px;
+	left: 50%;
+	width: 1000px;
+	height: 580px;
+	visibility: visible
+}
+/*Header*/
+.header {
+	height:101px;
+	display:block;
+	
+}
+#logo {
+	width:256px;
+	height:152px;
+	background: url(../img/rm-logo.png) no-repeat top center;
+	text-indent:-300em;
+	float:left;
+	position:absolute;
+	top:-10px;
+}
+.header .contact h2 {
+	position:absolute;
+	text-transform:uppercase;
+	color:#009b59;
+	font-size:12px;
+	left:530px;
+	top:53px;
+}
+.header .contact h2 span {
+	display:block;
+	color:#FFF;
+	font-size:36px;
+	line-height:34px;
+}
+.header img {
+	float:right;
+	position:absolute;
+	right:30px;top:36px;
+}
+/*END header*/
+
+/*Content*/
+.content {
+	padding-left:87px;
+	padding-top:30px;
+}
+.content h2 {
+	font-size:44px;
+	line-height:44px;
+	color:#009b59;
+	position:relative;
+	text-transform:uppercase;
+	padding:0;margin:0;
+}
+body.commando .content h3,
+body.officer .content h3,
+body.reservist .content h3 {
+	position:relative;
+	text-transform:uppercase;
+	left:2px;
+}
+body.commandoLinks h3,
+body.officerLinks h3,
+body.reservistLinks h3 {
+	font-size:14px;
+	width:650px;
+}
+
+.contentText {
+	width:380px;
+	position:relative;
+	left:444px;
+}
+.contentText p {
+	font-size:14px;
+	line-height:20px;
+	padding:0 0 10px
+}
+div.btn {
+	margin:30px 0 60px;
+}
+
+
+/*roles select*/
+div.roles {
+	float:left;
+	bottom:20px;
+	left:89px;
+	position:absolute;
+	width:500px;
+}
+div.roles p {
+	text-transform:uppercase;
+	color:#009b59;
+	padding:0;
+}
+div.roles p span {
+	color:#FFF;
+}
+ul#chooseRole {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+ul#chooseRole li {
+	margin-left:0;
+	float:left;
+	margin-right:8px;
+}
+li#commando a,
+li#officer a,
+li#reservist a {
+	height:82px;width:82px;display:block;
+	margin-top:1px;
+	text-indent:-300em;
+}
+li#commando a {
+	background: url(../img/roles/commando-inactive.png) no-repeat center;
+}
+li#officer a {
+	background: url(../img/roles/officer-inactive.png) no-repeat center;
+}
+li#reservist a {
+	background: url(../img/roles/reservist-inactive.png) no-repeat center;
+}
+
+li#commando a.active,
+li#commando a:hover {
+	background: url(../img/roles/commando-active.png) no-repeat;
+}
+li#officer a.active, 
+li#officer a:hover {
+	background: url(../img/roles/officer-active.png) no-repeat;
+}
+li#reservist a.active,
+li#reservist a:hover {
+	background: url(../img/roles/reservist-active.png) no-repeat;
+}
+ul.links {
+	list-style:none;
+	position:absolute;
+	float:left;
+	left:531px;
+	bottom:20px;
+}
+ul.links li {
+	float:left;
+	margin:0 10px 0 0;
+}
+/*buttons*/
+a.alreadyHaveIt {
+	background: url(../img/buttons/you-may-already-have-it.png);
+	height:28px;
+	width:212px;
+}
+a.join {
+	background: url(../img/buttons/join-today.png) no-repeat;
+	height:34px;
+	width:52px;
+}
+a.brochure {
+	background: url(../img/buttons/download-a-brochure.png) no-repeat;
+	height:34px;
+	width:90px;
+}
+a.chooseADiffRoll {
+	background: url(../img/buttons/choose-a-different-role.png) no-repeat;
+	height:28px;
+	width:219px;
+}
+a.facebook {
+	background: url(../img/buttons/facebook.png) no-repeat;
+	height:33px;
+	width:34px;
+
+}
+a.youTube {
+	background: url(../img/buttons/youtube.png) no-repeat;
+	height:27px;
+	width:66px;
+	margin-top:6px;
+}
+a.facebook, a.youTube, a.chooseADiffRoll, a.alreadyHaveIt, a.join, a.brochure {
+	display:block;
+	text-indent:-300em;
+}
+ul.links li.marginLeft {
+	margin-left:111px;
+}
+
+.chooseARole {
+	position:absolute;
+	bottom:50px;
+}
+
+/*Video Wall*/
+.contentVideoWall {
+	width:610px;
+	position:absolute;
+	left:340px;
+	margin-top:20px;
+}
+.contentVideoWall img {
+	display:block;
+}
+.contentVideoWall ul {
+	list-style:none;
+}
+.contentVideoWall li {
+	float:left;
+	margin-left:0;
+}
+.contentVideoWall a {
+	text-decoration:none;
+	color:#FFF;
+	text-transform:uppercase;
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+}
+
+.contentVideoWall a:hover span {
+	background: #FFF;
+	color:#000
+}
+
+.contentVideoWall a span{
+	/*@ transition-rule @*/	
+	background: rgba(0,0,0,0.5);
+	text-decoration:none;
+	color:#FFF;
+	display:block;
+	margin:1px 1px 1px 0;
+	padding-left:5px;
+	width:195px;
+	
+	-webkit-transition-property:background-color, color, width, padding-left, padding-right, padding-top, padding-bottom;
+	-webkit-transition-duration:1s;
+	/*-webkit-transition-delay:1s;*/
+	-moz-transition-property:background-color, color, width, padding-left, padding-right, padding-top, padding-bottom;
+	-moz-transition-duration:1s;
+	transition-property:background-color, color, width, padding-left, padding-right, padding-top, padding-bottom;
+	transition-duration:1s;
+	/*transition-delay:1s;*/
+}
+.contentVideoWall a:hover span {
+	/*@ transition-rule @*/
+	padding-left:5px;
+	background-color:#FFF;
+	color:#000;
+}
+.contentVideoWall a:active span {
+	/*@ transition-rule @*/
+	padding-left:5px;
+	background-color:#FFF;
+	color:#000;
+}
+.on {color:green !important;}
+.disabled {color:gray !important;}
+
+.contentHidden {display: none;}
