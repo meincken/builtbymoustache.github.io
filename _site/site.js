@@ -144,3 +144,15 @@ win.scroll(function(event) {
   });
 
 });
+
+(function($) {
+
+  $('.panel').hide();
+
+  $('.projects .expand').on('click', function (e) {
+    $('.panel').slideToggle('slow');
+    $(this).toggleClass('active');
+    e.preventDefault();
+  });
+
+})(jQuery);

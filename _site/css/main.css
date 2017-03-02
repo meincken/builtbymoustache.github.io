@@ -217,22 +217,6 @@ hr {
   border-width: 0;
   border-top: 1px solid #e1e1e1; }
 
-#work .container {
-  width: 100%;
-  max-width: 100%; }
-  #work .container .projects ul {
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-    #work .container .projects ul li {
-      border: 1px solid #fff;
-      text-align: center;
-      display: flex;
-      align-items: stretch;
-      justify-content: center; }
-      #work .container .projects ul li a {
-        display: block; }
-
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -1039,3 +1023,43 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 20px 0; }
+
+@media screen and (max-width: 767px) {
+  #services .row {
+    display: block; } }
+#work .container {
+  width: 100%;
+  max-width: 100%; }
+  #work .container .projects ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    #work .container .projects ul li {
+      border: 1px solid #fff;
+      text-align: center;
+      height: 250px;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #work .container .projects ul li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 1s; }
+        #work .container .projects ul li a:hover {
+          background: #fff;
+          color: #000; }
+
+@media screen and (max-width: 767px) {
+  #work .container .projects ul {
+    display: block; }
+    #work .container .projects ul li {
+      display: block;
+      width: 100%;
+      height: auto; } }

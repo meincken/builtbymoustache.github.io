@@ -35,31 +35,3 @@ hr {
   border-width: 0;
   border-top: 1px solid $light-grey;
 }
-
-// Custom
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-#work {
-  .container {
-    width: 100%;
-    max-width: 100%;
-
-    .projects {
-      ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        li {
-          border: 1px solid #fff;
-          text-align: center;
-          display: flex;
-          align-items: stretch;
-          justify-content: center;
-          a {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-}
