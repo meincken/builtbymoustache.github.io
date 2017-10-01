@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CultBeauty test</title>
+  <meta name="description" content="CultBeauty test">
+  <meta name="author" content="SitePoint">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="normalize.css" rel="stylesheet">
+
+	<style>
+			html {
+				font-size: 62.5%;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			.container {
+				max-width: 750px;
+				margin: 0 auto;
+				font-size: 1.4rem;
+			}
+
+			.container header {
+				height: 100px;
+			}
+
+			.container header h1 {
+				font-size: 4rem;
+				text-align: center;
+			}
+
+	    .bookmarklet {
+	      background: #1e1e1e;
+	      border: 0.1rem solid #1e1e1e;
+	      border-radius: 0.5rem;
+				font-size: 1.8rem;
+	      color: white;
+	      padding: 1rem;
+	      text-decoration: none;
+				display: inline-block;
+				text-align: center;
+	    }
+
+	    .bookmarklet:hover {
+	      opacity: 0.5;
+	    }
+
+			footer {
+				background: #000;
+				color: #fff;
+				height: 3rem;
+				padding: 1rem 0;
+				width: 100vw;
+				bottom: 0;
+			}
+			footer p {
+				text-align: center;
+			}
+	  </style>
+</head>
+
+
+<body>
+<div class="container">
+	<header>
+		<h1>Cult Beauty code test</h1>
+	</header>
+	<a class="bookmarklet" href="javascript:!function(){var%20t=document.getElementsByTagName(%22span%22,%22div%22),e=0;for(e;e%3Ct.length;e++)if(prop=t[e].getAttribute(%22itemprop%22),prop){t[e].innerHTML;break}var%20i={},r=$(%22[itemscope]%22).map(function(t,e){var%20i={type:[$(e).attr(%22itemtype%22)],properties:{}};return%20$(e).find(%22[itemprop]%22).attr(%22itemprop%22,function(t,e){if(i.properties[e]=[$(this).prop(%22content%22)||$(this).text()||$(this).attr(%22src%22)],$(this).is(%22[itemscope]%22)%26%26$(this).is(%22[itemprop]%22)){var%20r={type:[$(this).attr(%22itemtype%22)],properties:{}};$(this).find(%22[itemprop]%22).attr(%22itemprop%22,function(t,e){r.properties[e]=[$(this).prop(%22content%22)||$(this).text()||$(this).attr(%22src%22)]}),i.properties[$(this).attr(%22itemprop%22)]=[r]}}),i}).get();i.items=r,$(%22body%22).append(%22%3Cstyle%3E.culttest%20{position:%20fixed;%20z-index:%20999;%20height:%20100px;%20overflow:%20scroll;%20right:%200;%20bottom:%200;%20background:%20black;%20color:%20white;font-size:%2014px;}%20.culttest%20td{padding:%2010px;vertical-align:%20middle;}%20.culttest%20td%20a{color:%20white;%20float:%20right;}%3C/style%3E%3Ctable%20class='culttest'%3E%3Ctr%3E%3Ctd%3Eitemprop%3C/td%3E%3Ctd%3EProduct%3C/td%3E%3Ctd%3E%3Ca%20href='%23'%20onClick='window.location.reload();return%20false;'%3E%26%23x21bb;%3C/a%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%22+prop+%22%3C/td%3E%3Ctd%3E%22+i.items[0].properties.name+%22%3C/td%3E%3Ctd%3E%3Ctd%3E%3C/tr%3E%3Ctable%3E%22)}();">
+		Cult Beauty Bookmarklet
+	</a>
+	<p>In order to add the Cult Beauty bookmarklet, please drag the above button onto your bookmarks bar.</p>
+
+	<p>In order to assist with my testing I have added in a refresh button to the table.</p>
+	<p>Also I have added in headers to the table for reference.</p>
+
+<pre style="max-width: 750px; margin: 20px auto; background: #000; color: #fff; padding: 20px; font-size: 0.8rem; white-space: pre-wrap;">
+var els = document.getElementsByTagName('span', 'div'), i = 0, product;
+for(i; i < els.length; i++) {
+  prop = els[i].getAttribute('itemprop');
+
+  if(prop) {
+    product = els[i].innerHTML;
+    break;
+  }
+}
+
+var result = {};
+var items = $("[itemscope]").map(function(i, el) {
+  var item = {
+    "type": [$(el).attr("itemtype")],
+    "properties": {}
+  };
+  $(el).find("[itemprop]")
+  .attr("itemprop", function(i, props) {
+    item.properties[props] = [
+      $(this).prop("content")
+      || $(this).text()
+      || $(this).attr("src")
+    ];
+    if ($(this).is("[itemscope]") && $(this).is("[itemprop]")) {
+      var _item = {
+        "type": [$(this).attr("itemtype")],
+        "properties": {}
+      };
+      $(this).find("[itemprop]")
+      .attr("itemprop", function(i, _props) {
+        _item.properties[_props] = [ $(this).prop("content") || $(this).text() || $(this).attr("src") ];
+      });
+      item.properties[$(this).attr("itemprop")] = [_item];
+    };
+  });
+  return item
+}).get();
+
+result.items = items;
+
+$("body").append(
+  &lt;style&gt;.culttest {position: fixed; z-index: 999; height: 100px; overflow: scroll; right: 0; bottom: 0; background: black; color: white;font-size: 14px;} .culttest td{padding: 10px;vertical-align: middle;} .culttest td a{color: white; float: right;}&lt;/style&gt;&lt;table class='culttest'&gt;&lt;tr&gt;&lt;td&gt;itemprop&lt;/td&gt;&lt;td&gt;Product&lt;/td&gt;&lt;td&gt;&lt;a href='#' onClick='window.location.reload();return false;'>&#x21bb;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;" + prop + "&lt;/td&gt;&lt;td&gt;"+ result.items["0"].properties.name +"&lt;/td&gt;&lt;td&gt;&lt;td&gt;&lt;/tr&gt;&lt;table&gt;
+);
+	</pre>
+</div>
+
+<footer>
+	<p><small>Built by Nick Meincken</small></p>
+</footer>
+
+<script>
+var els = document.getElementsByTagName('span', 'div'), i = 0, product;
+for(i; i < els.length; i++) {
+  prop = els[i].getAttribute('itemprop');
+
+  if(prop) {
+    product = els[i].innerHTML;
+    break;
+  }
+}
+
+var result = {};
+var items = $("[itemscope]").map(function(i, el) {
+  var item = {
+    "type": [$(el).attr("itemtype")],
+    "properties": {}
+  };
+  $(el).find("[itemprop]")
+  .attr("itemprop", function(i, props) {
+    item.properties[props] = [
+      $(this).prop("content")
+      || $(this).text()
+      || $(this).attr("src")
+    ];
+    if ($(this).is("[itemscope]") && $(this).is("[itemprop]")) {
+      var _item = {
+        "type": [$(this).attr("itemtype")],
+        "properties": {}
+      };
+      $(this).find("[itemprop]")
+      .attr("itemprop", function(i, _props) {
+        _item.properties[_props] = [ $(this).prop("content") || $(this).text() || $(this).attr("src") ];
+      });
+      item.properties[$(this).attr("itemprop")] = [_item];
+    };
+  });
+  return item
+}).get();
+
+result.items = items;
+// console.log(result);
+// console.log(result.items["0"].properties.name)
+
+$("body").append(
+  "<style>.culttest {position: fixed; z-index: 999; height: 100px; overflow: scroll; right: 0; bottom: 0; background: black; color: white;font-size: 14px;} .culttest td{padding: 10px;vertical-align: middle;} .culttest td a{color: white; float: right;}</style><table class='culttest'><tr><td>itemprop</td><td>Product</td><td><a href='#' onClick='window.location.reload();return false;'>&#x21bb;</a></td></tr><tr><td>" + prop + "</td><td>"+ result.items["0"].properties.name +"</td><td><td></tr><table>"
+);
+</script>
+</body>
+</html>

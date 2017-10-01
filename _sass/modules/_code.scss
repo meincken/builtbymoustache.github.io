@@ -9,10 +9,10 @@ code {
   background: lighten($light-grey, 6.4%);
   border: 1px solid $light-grey;
   border-radius: $global-radius;
-}
 
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre;
+	> code {
+	  display: block;
+	  padding: 1rem 1.5rem;
+	  white-space: pre;
+	}
 }

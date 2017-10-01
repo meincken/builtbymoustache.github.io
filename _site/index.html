@@ -5,19 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Built by Moustache</title>
 	<meta name="keywords" content="Web design and development">
-	<meta name="description" content="A single-page template for Jekyll based blogs (like what you'd use on github pages!)">
-  <link rel="stylesheet" href="combo.css">
-  <link rel="stylesheet" href="assets/fontcustom/fontcustom.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<meta name="description" content="Web design and development of Nick Meincken. ">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/builtbymoustache.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
 </head>
 <body>
 
-  <div id="main">
+  <div id="main" itemprop="">
 
     <nav>
   <ul>
@@ -32,10 +28,7 @@
       <li class="p-services"><a href="#services">Services</a></li>
     
       
-      <li class="p-work"><a href="#work">Portfolio</a></li>
-    
-      
-      <li class="p-clients"><a href="#clients">Clients</a></li>
+      <li class="p-portfolio"><a href="#portfolio">Portfolio</a></li>
     
   </ul>
 </nav>
@@ -46,6 +39,10 @@
       
       <div id="intro" class="section p-intro">
         
+        <div class="subtlecircle sectiondivider faicon">
+          <h5 class="icon-title">Intro</h5>
+        </div>
+        
 
         
         <div class="container center">
@@ -55,7 +52,9 @@
 
 <h1>Built by Moustache <small>{ Web development with added Tache }</small></h1>
 
-<p>Web development, optimization, styleguides, developer guides.</p>
+<p>Web development, code optimization, styleguides, developer guides, best practices.</p>
+
+<p>Atomic design evangelist.</p>
 
             </div>
           </div>
@@ -68,10 +67,6 @@
       <div id="about" class="section p-about">
         
         <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-rocket fa-stack-1x"></i>
-          </span>
           <h5 class="icon-title">About</h5>
         </div>
         
@@ -82,9 +77,7 @@
             <div class="twelve columns">
               <h2>This is Built by Moustache</h2>
 
-<h4>all about me</h4>
-
-<p>I have been building websites for so long now that I remember a time before stylesheets and everything was done using tables. Disgusting I know! Front End Development is my thing and I am truly passionate about clean, functional front end design. I like clean web sites with beautiful typography.</p>
+<p>I have been building websites for so long now that I remember a time before stylesheets when everything was done using tables. Disgusting I know! Front End Development is my passion and I am truly obsessed with clean, functional front end design. I like clean web sites with beautiful typography and functional layouts.</p>
 
             </div>
           </div>
@@ -97,10 +90,6 @@
       <div id="services" class="section p-services">
         
         <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-gear fa-stack-1x"></i>
-          </span>
           <h5 class="icon-title">Services</h5>
         </div>
         
@@ -130,13 +119,9 @@
       </div>
     
       
-      <div id="work" class="section p-work">
+      <div id="portfolio" class="section p-portfolio">
         
         <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-code fa-stack-1x"></i>
-          </span>
           <h5 class="icon-title">Portfolio</h5>
         </div>
         
@@ -147,17 +132,16 @@
             <div class="twelve columns">
               <div class="projects">
   <ul>
-    <li><a href="#vm" class="expand">Virgin Media</a></li>
-    <li><a href="#rm" class="expand">Royal Marines</a></li>
-    <li><a href="#bp" class="expand">Blind Pig</a></li>
-    <li><a href="#ra" class="expand">Rapha</a></li>
-    <li><a href="#bt" class="expand">Brentwood Tutorials</a></li>
+    <li><a href="#vm" data-target="virgin" class="expand">Virgin Media</a></li>
+    <li><a href="#bp" data-target="blindpig" class="expand">Blind Pig</a></li>
+    <li><a href="#ra" data-target="rapha" class="expand">Rapha</a></li>
+    <li><a href="#bt" data-target="brentwood" class="expand">Brentwood Tutorials</a></li>
   </ul>
 
-  <div id="vm" class="panel" style="display: none;">
+  <div id="virgin" class="panel">
     <h2>Virgin Media</h2>
     <p>
-      I have worked with Virgin for several years and over that time contributed on a number of projects. Being part of a wider team that introduced a series of standards that all departments adhered to. This allowed all developers to table any new technology that we all supported meaning we had less code conflicts.
+      I had worked with VirginMedia for several years and over that time contributed on a number of projects. Being part of a wider team that introduced a series of standards that all departments adhered to. This allowed all developers to table any new technology that we all supported meaning we had less code conflicts. I worked as a technical lead and pushed for open standards to be followed.
     </p>
 
     <figure>
@@ -189,22 +173,9 @@
     </ul>
   </div>
 
-  <div id="rm" class="panel">
-    <h2>Royal Marines</h2>
-    <p>Microsite for Royal Marines campaign using CSS3 transitions.</p>
-    <figure>
-      <img src="http://builtbymoustache.com/assets/royalmarines/landing.png" />
-      <figcaption>Royal Marines microsite landing page</figcaption>
-    </figure>
-    <figure>
-      <img src="http://builtbymoustache.com/assets/royalmarines/video-wall.png" />
-      <figcaption>Royal Marines microsite video wall</figcaption>
-    </figure>
-  </div>
-
-  <div id="was" class="panel">
-    <h2>We Are Social</h2>
-    <p>Microsite on behalf of WeAreSocial for Blind Pig Cider.</p>
+  <div id="blindpig" class="panel">
+    <h2>Client - We Are Social on behalf of Blind Pig cider</h2>
+    <p>This was a very interesting Microsite for Blind Pig Cider. Lots of custom plugins and a lot of formatting and cleaning of the base SCSS files resulted in a very nice clean site. I created some very basic </p>
 
     <ul class="tags">
       <li>SASS</li>
@@ -228,39 +199,11 @@
 
 </div>
 
-            </div>
-          </div>
-        </div>
-        
+<h3>Other works</h3>
 
-      </div>
-    
-      
-      <div id="clients" class="section p-clients">
-        
-        <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-code fa-stack-1x"></i>
-          </span>
-          <h5 class="icon-title">Clients</h5>
-        </div>
-        
+<p>Over the years I have worked for a number of companies. The above are just some examples of work I am most pleased with.</p>
 
-        
-        <div class="container ">
-          <div class="row">
-            <div class="twelve columns">
-              <h2>People who I done worked for</h2>
-
-<ul>
-  <li>Virgin Media</li>
-  <li>Merchant Cantos</li>
-  <li>Rapha</li>
-  <li>WeAreSocial</li>
-  <li>Golly Slater</li>
-  <li>CMW</li>
-</ul>
+<p>Matter of Form, Merchant Cantos, Golly Slater, CMW</p>
 
             </div>
           </div>
@@ -274,8 +217,7 @@
     <div id="footer" class="section text-white">
       <div class="container">
         
-        
-<p>Design by Nick Meincken for <a href="http://builtbymoustache.com/">builtbymoustache.com</a> 2016</p>
+        <p>Design by Nick Meincken for <a href="http://builtbymoustache.com/">builtbymoustache.com</a> 2017</p>
 
 
       </div>

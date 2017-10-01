@@ -1,24 +1,23 @@
 ---
 title: "Portfolio"
+clean-title: "projects"
 bg: black
 color: white
-fa-icon: code
 template: twelve
 ---
 
-<div class="projects">
+<div class="{{ page.clean-title }}">
   <ul>
-    <li><a href="#vm" class="expand">Virgin Media</a></li>
-    <li><a href="#rm" class="expand">Royal Marines</a></li>
-    <li><a href="#bp" class="expand">Blind Pig</a></li>
-    <li><a href="#ra" class="expand">Rapha</a></li>
-    <li><a href="#bt" class="expand">Brentwood Tutorials</a></li>
+    <li><a href="#vm" data-target="virgin" class="expand">Virgin Media</a></li>
+    <li><a href="#bp" data-target="blindpig" class="expand">Blind Pig</a></li>
+    <li><a href="#ra" data-target="rapha" class="expand">Rapha</a></li>
+    <li><a href="#bt" data-target="brentwood" class="expand">Brentwood Tutorials</a></li>
   </ul>
 
-  <div id="vm" class="panel" style="display: none;">
+  <div id="virgin" class="panel">
     <h2>Virgin Media</h2>
     <p>
-      I have worked with Virgin for several years and over that time contributed on a number of projects. Being part of a wider team that introduced a series of standards that all departments adhered to. This allowed all developers to table any new technology that we all supported meaning we had less code conflicts.
+      I had worked with VirginMedia for several years and over that time contributed on a number of projects. Being part of a wider team that introduced a series of standards that all departments adhered to. This allowed all developers to table any new technology that we all supported meaning we had less code conflicts. I worked as a technical lead and pushed for open standards to be followed.
     </p>
 
     <figure>
@@ -50,22 +49,9 @@ template: twelve
     </ul>
   </div>
 
-  <div id="rm" class="panel">
-    <h2>Royal Marines</h2>
-    <p>Microsite for Royal Marines campaign using CSS3 transitions.</p>
-    <figure>
-      <img src="http://builtbymoustache.com/assets/royalmarines/landing.png"/>
-      <figcaption>Royal Marines microsite landing page</figcaption>
-    </figure>
-    <figure>
-      <img src="http://builtbymoustache.com/assets/royalmarines/video-wall.png"/>
-      <figcaption>Royal Marines microsite video wall</figcaption>
-    </figure>
-  </div>
-
-  <div id="was" class="panel">
-    <h2>We Are Social</h2>
-    <p>Microsite on behalf of WeAreSocial for Blind Pig Cider.</p>
+  <div id="blindpig" class="panel">
+    <h2>Client - We Are Social on behalf of Blind Pig cider</h2>
+    <p>This was a very interesting Microsite for Blind Pig Cider. Lots of custom plugins and a lot of formatting and cleaning of the base SCSS files resulted in a very nice clean site. I created some very basic </p>
 
     <ul class="tags">
       <li>SASS</li>
@@ -88,3 +74,9 @@ template: twelve
   </div>
 
 </div>
+
+### Other works
+
+Over the years I have worked for a number of companies. The above are just some examples of work I am most pleased with.
+
+Matter of Form, Merchant Cantos, Golly Slater, CMW
