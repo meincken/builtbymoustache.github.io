@@ -464,7 +464,7 @@ button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555555;
+  color: #404040;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -483,7 +483,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555555;
+  color: #404040;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -500,24 +500,24 @@ input[type="submit"], input[type="reset"], input[type="button"] {
 
 .button:hover,
 button:hover {
-  color: #333;
-  border-color: #888888;
+  color: #1e1e1e;
+  border-color: #737373;
   outline: 0; }
 
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-  color: #333;
-  border-color: #888888;
+  color: #1e1e1e;
+  border-color: #737373;
   outline: 0; }
 
 .button:focus,
 button:focus {
-  color: #333;
-  border-color: #888888;
+  color: #1e1e1e;
+  border-color: #737373;
   outline: 0; }
 
 input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
-  color: #333;
-  border-color: #888888;
+  color: #1e1e1e;
+  border-color: #737373;
   outline: 0; }
 
 .button.button-primary,
@@ -1072,7 +1072,6 @@ nav {
 /* ----- sections/articles ----- */
 .section {
   background: #1e1e1e;
-  border-top: 1px solid #a9cc17;
   display: block;
   padding: 130px 0;
   position: relative;
@@ -1085,6 +1084,7 @@ nav {
 
 #footer {
   background-color: #2e2e2e;
+  color: #fff;
   background-image: none;
   min-height: 0;
   padding: 20px 0;
@@ -1096,7 +1096,7 @@ nav {
 
 .sectiondivider {
   position: absolute;
-  top: 70px; }
+  top: 75px; }
   .sectiondivider img {
     width: 200px;
     height: 240px;
@@ -1137,7 +1137,7 @@ nav {
         font-size: 80px;
         font-size: 8rem; } }
   .sectiondivider.imaged {
-    text-shadow: 1px 1px 3px #333; }
+    text-shadow: 1px 1px 3px #2e2e2e; }
 
 .columned {
   column-count: 2;
@@ -1165,11 +1165,12 @@ nav {
     height: 200px;
     z-index: 9999; } }
 #forkongithub a {
+  font-size: 10px;
+  font-size: 1rem;
   color: #fff;
   text-decoration: none;
   text-align: center;
   font-weight: 700;
-  font-size: 1rem;
   line-height: 2rem;
   position: relative;
   transition: 0.5s;
@@ -1181,7 +1182,7 @@ nav {
       top: 60px;
       right: -60px;
       transform: rotate(45deg);
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+      box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8);
       box-sizing: content-box; } }
   #forkongithub a::before, #forkongithub a::after {
     content: "";
@@ -1196,8 +1197,18 @@ nav {
     bottom: 1px;
     top: auto; }
 
-.section p {
-  font-weight: 300; }
+.section {
+  background: #e1e1e1;
+  color: #1e1e1e; }
+  .section h5 {
+    color: #e1e1e1; }
+  .section:nth-of-type(even) {
+    background: #1e1e1e;
+    color: #e1e1e1; }
+    .section:nth-of-type(even) h5 {
+      color: #1e1e1e; }
+  .section p {
+    font-weight: 300; }
 
 #intro {
   height: 100%;
@@ -1223,7 +1234,10 @@ nav {
       padding: 0 5%; }
 
 #portfolio .projects h2 {
-  text-align: left; }
+  text-align: left;
+  margin: 20px 0 30px; }
+#portfolio .projects p:first-of-type {
+  margin-top: 0; }
 #portfolio .projects ul {
   display: block;
   /* Nick layout */ }

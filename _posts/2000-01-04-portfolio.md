@@ -50,7 +50,7 @@ template: twelve
   </div>
 
   <div id="blindpig" class="panel">
-    <h2>Client - We Are Social on behalf of Blind Pig cider</h2>
+    <h2>Client - We Are Social <small>on behalf of Blind Pig cider</small></h2>
     <p>This was a very interesting Microsite for Blind Pig Cider. Lots of custom plugins and a lot of formatting and cleaning of the base SCSS files resulted in a very nice clean site. I created some very basic </p>
 
     <ul class="tags">
