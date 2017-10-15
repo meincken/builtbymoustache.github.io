@@ -107,9 +107,20 @@
 					text-transform: uppercase;
           transition: all 1s;
 
+					img {
+						transition: all 1s;
+						opacity: 1;
+						width: 75px;
+						filter: grayscale(0) brightness(0) invert(1);
+					}
+
           &:hover {
-            background: $white;
-            color: $black;
+						background: $white;
+
+						img {
+							// background: $white;
+							filter: brightness(0) invert(0);
+						}
           }
         }
       }
@@ -132,6 +143,14 @@
 				}
 			}
     }
+
+		.panel {
+			display: none;
+
+			&.current {
+				display: block;
+			}
+		}
 
 		img {
 			filter: grayscale(100%);

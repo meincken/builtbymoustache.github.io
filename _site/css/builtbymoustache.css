@@ -352,58 +352,58 @@ p {
 
   .one.column,
   .one.columns {
-    width: 4.66667%; }
+    width: 4.6666666667%; }
 
   .two.columns {
-    width: 13.33333%; }
+    width: 13.3333333333%; }
 
   .three.columns {
     width: 22%; }
 
   .four.columns {
-    width: 30.66667%; }
+    width: 30.6666666667%; }
 
   .five.columns {
-    width: 39.33333%; }
+    width: 39.3333333333%; }
 
   .six.columns {
     width: 48%; }
 
   .seven.columns {
-    width: 56.66667%; }
+    width: 56.6666666667%; }
 
   .eight.columns {
-    width: 65.33333%; }
+    width: 65.3333333333%; }
 
   .nine.columns {
     width: 74%; }
 
   .ten.columns {
-    width: 82.66667%; }
+    width: 82.6666666667%; }
 
   .eleven.columns {
-    width: 91.33333%; }
+    width: 91.3333333333%; }
 
   .twelve.columns {
     width: 100%;
     margin-left: 0; }
 
   .one-third.column {
-    width: 30.66667%; }
+    width: 30.6666666667%; }
 
   .two-thirds.column {
-    width: 65.33333%; }
+    width: 65.3333333333%; }
 
   .one-half.column {
     width: 48%; }
 
   .offset-by-one.column,
   .offset-by-one.columns {
-    margin-left: 8.66667%; }
+    margin-left: 8.6666666667%; }
 
   .offset-by-two.column,
   .offset-by-two.columns {
-    margin-left: 17.33333%; }
+    margin-left: 17.3333333333%; }
 
   .offset-by-three.column,
   .offset-by-three.columns {
@@ -411,11 +411,11 @@ p {
 
   .offset-by-four.column,
   .offset-by-four.columns {
-    margin-left: 34.66667%; }
+    margin-left: 34.6666666667%; }
 
   .offset-by-five.column,
   .offset-by-five.columns {
-    margin-left: 43.33333%; }
+    margin-left: 43.3333333333%; }
 
   .offset-by-six.column,
   .offset-by-six.columns {
@@ -423,11 +423,11 @@ p {
 
   .offset-by-seven.column,
   .offset-by-seven.columns {
-    margin-left: 60.66667%; }
+    margin-left: 60.6666666667%; }
 
   .offset-by-eight.column,
   .offset-by-eight.columns {
-    margin-left: 69.33333%; }
+    margin-left: 69.3333333333%; }
 
   .offset-by-nine.column,
   .offset-by-nine.columns {
@@ -435,19 +435,19 @@ p {
 
   .offset-by-ten.column,
   .offset-by-ten.columns {
-    margin-left: 86.66667%; }
+    margin-left: 86.6666666667%; }
 
   .offset-by-eleven.column,
   .offset-by-eleven.columns {
-    margin-left: 95.33333%; }
+    margin-left: 95.3333333333%; }
 
   .offset-by-one-third.column,
   .offset-by-one-third.columns {
-    margin-left: 34.66667%; }
+    margin-left: 34.6666666667%; }
 
   .offset-by-two-thirds.column,
   .offset-by-two-thirds.columns {
-    margin-left: 69.33333%; }
+    margin-left: 69.3333333333%; }
 
   .offset-by-one-half.column,
   .offset-by-one-half.column {
@@ -1270,9 +1270,15 @@ nav {
       text-decoration: none;
       text-transform: uppercase;
       transition: all 1s; }
+      #portfolio .projects ul li a img {
+        transition: all 1s;
+        opacity: 1;
+        width: 75px;
+        filter: grayscale(0) brightness(0) invert(1); }
       #portfolio .projects ul li a:hover {
-        background: #fff;
-        color: #000; }
+        background: #fff; }
+        #portfolio .projects ul li a:hover img {
+          filter: brightness(0) invert(0); }
   #portfolio .projects ul.tags {
     font-size: 15px;
     font-size: 1.5rem;
@@ -1286,6 +1292,10 @@ nav {
       height: auto;
       padding: 5px;
       width: auto; }
+#portfolio .projects .panel {
+  display: none; }
+  #portfolio .projects .panel.current {
+    display: block; }
 #portfolio .projects img {
   filter: grayscale(100%);
   transition: filter 10s, opacity 5s;
