@@ -14,12 +14,12 @@ template: twelve
     <li><a href="#bt" data-target="brentwood" class="expand"><img src="assets/logos/ar-tutoring-logo.png" alt="ARTuition"/></a></li>
 		<li><a href="#bel" data-target="belmond" class="expand"><img src="assets/logos/belmond-logo.svg" alt="Belmond"/></a></li>
   </ul>
-	
+
 	<div class="project-block">
 	  <div id="virgin" class="panel">
 	    <h2>Virgin Media</h2>
 	    <p>
-	      I had worked with VirginMedia for several years and over that time contributed on a number of projects. Being part of a wider team that introduced a series of standards that all departments adhered to. This allowed all developers to table any new technology that we all supported meaning we had less code conflicts. I worked as a technical lead and pushed for open standards to be followed.
+	      I had worked with VirginMedia for several years and over that time contributed on a number of projects. Being part of a wider team that introduced a series of standards that all departments adhered to. This allowed all developers to table any new technology that we all supported, meaning we had less code conflicts. I worked as a technical lead and pushed for open standards to be followed. I also worked as part of a larger working group of lead developers who pushed for a single set of coding standards.
 	    </p>
 
 	    <figure>
@@ -32,7 +32,7 @@ template: twelve
 	    </figure>
 
 	    <p>
-	      I was also tasked with creating an online style guide for developers and designers to work from, this was known as the OMG (online media guide). It was based on Atomic Design principles.
+	      I was also tasked with creating an online style guide for developers and designers to work from, this was known as the OMG (online media guide). It was based on Atomic Design principles. It consisted of a series of design patterns for designers to follow and a code lab for developers. This allowed to cover any inconsistencies between design and development.
 	    </p>
 
 	    <figure>
@@ -44,10 +44,15 @@ template: twelve
 	      <figcaption>OMG Toolkit page template</figcaption>
 	    </figure>
 
+		<p>Over the years I had worked with a number of different technologies including what is listed below as well as Teamsite, Angular 1, .Net.
+
 	    <ul class="tags">
-	      <li>Style guide</li>
+	      <li>Styleguide</li>
 	      <li>AEM</li>
 	      <li>SASS</li>
+		  <li>Bootstrap 2/3</li>
+		  <li>Grunt</li>
+		  <li>Wordpress/Jekyll/Patternlabs</li>
 	    </ul>
 	  </div>
 
