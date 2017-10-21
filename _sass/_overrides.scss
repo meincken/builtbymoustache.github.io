@@ -91,8 +91,8 @@
         @include respond-to(tablet) {
             border: 1px solid $white;
             text-align: center;
-            height: calc(70vw / 4);
-            width: 25%;
+            height: calc(960px / 5);
+            width: 20%;
             display: flex;
             align-items: center;
             justify-content: center;
