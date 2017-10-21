@@ -136,7 +136,7 @@ $(document).ready(function (){
 
 var win = $(window);
 
-var allMods = $(".p-work .container figure img");
+var allMods = $(".p-portfolio .container figure img");
 
 allMods.each(function(i, el) {
   var el = $(el);
