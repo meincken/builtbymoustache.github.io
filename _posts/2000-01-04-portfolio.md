@@ -79,6 +79,27 @@ template: twelve
                 <li>Wordpress</li>
             </ul>
         </div>
+
+		<div id="brentwood" class="panel">
+			<h2>Brentwood Tutoring</h2>
+			<p>Personal site</p>
+			<ul class="tags">
+				<li>SCSS</li>
+				<li>jQuery</li>
+				<li>Wordpress</li>
+			</ul>
+		</div>
+
+		<div id="belmond" class="panel">
+			<h2>Belmond</h2>
+			<p>I worked as part of a team of 5 developers for Matter of Form</p>
+			<ul class="tags">
+				<li>Handlebars</li>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>jQuery</li>
+			</ul>
+		</div>
     </div>
 </div>
 
