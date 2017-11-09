@@ -85,18 +85,28 @@ $(document).ready(function (){
 
 		e.preventDefault();
 	});
-
-	$('.global-header .global-open').on('click', function(e) {
-		$('nav').slideToggle();
-		e.preventDefault();
-	});
-
-	$('.global-header nav ul li a').on('click', function(e){
-		$('nav').slideToggle();
-		e.preventDefault();
-	});
-
 });
+
+$(window).on("resize", function (e) {
+	checkScreenSize();
+});
+
+checkScreenSize();
+
+function checkScreenSize(){
+	var newWindowWidth = $(window).width();
+	if (newWindowWidth < 767) {
+		$('.global-header .global-open').on('click', function(e) {
+			$('nav').slideToggle();
+			e.preventDefault();
+		});
+
+		$('.global-header nav ul li a').on('click', function(e){
+			$('nav').slideToggle();
+			e.preventDefault();
+		});
+	} else {}
+}
 
 (function($) {
 
