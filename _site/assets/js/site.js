@@ -91,6 +91,11 @@ $(document).ready(function (){
 		e.preventDefault();
 	});
 
+	$('.global-header nav ul li a').on('click', function(e){
+		$('nav').slideToggle();
+		e.preventDefault();
+	});
+
 });
 
 (function($) {
