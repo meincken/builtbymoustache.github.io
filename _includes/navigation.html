@@ -1,8 +1,8 @@
-<nav>
-  <ul>
-    {% for node in site.posts reversed %}
-      {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-      <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-    {% endfor %}
-  </ul>
-</nav>
+	<header class="global-header">
+		<a href="#">menu</a>
+		<nav>
+		  <ul>{% for node in site.posts reversed %}{% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+			<li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>{% endfor %}
+		  </ul>
+		</nav>
+	</header>

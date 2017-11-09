@@ -1,56 +1,53 @@
 ---
 ---
 {% include head.html %}
-  <div id="main" itemprop="">
+<div id="main">
+{% include navigation.html %}
+{% for page in site.posts reversed %}
+{% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+	<section id="{{id}}" class="section p-{{id}}">
+		{% if page.template %}
+		<article class="container {{ page.style }}">
+			{% if page.icon %}
+			<header class="article-header">
+				<img src="{{page.icon}}" alt="section icon" />
+				<h5>{{ page.title }}</h5>
+			</header>
+			{% elsif page.title %}
+			<header class="article-header">
+				<h5 class="icon-title">{{ page.title }}</h5>
+			</header>{% endif %}
 
-    {% include navigation.html %}
+			<div class="row">
+				<div class="twelve columns">
+					{{ page.content }}
+				</div>
+			</div>
+		</article>{% elsif page.alt-template %}
+		<article class="container {{ page.style }}">
+			{% if page.icon %}
+			<header class="article-header">
+				<img src="{{page.icon}}" alt="section icon" />
+				<h5>{{ page.title }}</h5>
+			</header>
+			{% elsif page.title %}
+			<header class="article-header">
+				<h5 class="icon-title">{{ page.title }}</h5>
+			</header>{% endif %}
 
-
-    {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
-          <img src="{{page.icon}}" alt="section icon" />
-          <h5 class="icon-title">{{ page.title }}</h5>
-        </div>
-
-        {% elsif page.title %}
-        <div class="subtlecircle sectiondivider faicon">
-          <h5 class="icon-title">{{ page.title }}</h5>
-        </div>
-        {% endif %}
-
-        {% if page.template %}
-        <div class="container {{ page.style }}">
-          <div class="row">
-            <div class="twelve columns">
-              {{ page.content }}
-            </div>
-          </div>
-        </div>
-        {% elsif page.alt-template %}
-        <div class="container {{ page.style }}">
-          <div class="row">
-            {{ page.content }}
-          </div>
-        </div>
-        {% endif %}
-
-      </div>
-    {% endfor %}
-
-
-    <div id="footer" class="section text-white">
-      <div class="container">
-        {% capture foottext %} {% include footer.html %} {% endcapture %}
-        {{ foottext | markdownify }}
-      </div>
-    </div>
-  </div>
-
+			<div class="row">
+				{{ page.content }}
+			</div>
+		</article>{% endif %}
+	</section>{% endfor %}
+	<footer id="footer" class="global-footer">
+		<div class="container">
+			{% capture foottext %} {% include footer.html %} {% endcapture %}{{ foottext | markdownify }}
+		</div>
+	</footer>
+</div>
 {% include analytics.html %}
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="site.js"></script>
+<script src="assets/js/site.js"></script>
 </html>

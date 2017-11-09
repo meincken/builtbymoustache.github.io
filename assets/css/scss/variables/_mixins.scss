@@ -1,0 +1,40 @@
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+$spacing-unit: 30px;
+
+// sizes
+$content-width: 800px;
+$break-small: 767px;
+$break-large: 960px;
+
+/* Clearfix */
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin respond-to($media) {
+	@if $media == mobile {
+		@media only screen and (max-width: $break-small - 1) {
+			@content;
+		}
+	}
+
+	@else if $media == tablet {
+		@media only screen and (min-width: $break-small) {
+			@content;
+		}
+	}
+
+	@else if $media == desktop {
+		@media only screen and (min-width: $break-large) {
+			@content;
+		}
+	}
+}

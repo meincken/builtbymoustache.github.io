@@ -1,0 +1,31 @@
+// Colours
+$white: #fff;
+$grey: #2e2e2e;
+$green: #a9cc17;
+
+$black: 	#000;
+$black90: 	lighten($black, 11.8); // #1e1e1e
+$black75: 	lighten($black, 25);
+$black50: 	lighten($black, 50);
+$black25: 	lighten($black, 75);
+$black10: 	lighten($black, 88.1); // #e1e1e1
+$white: 	#fff;
+
+$text-color: $white;
+$background-color: #fdfdfd;
+$brand-color: #2a7ae2;
+$link-color: $green;
+
+$grey-color: #1e1e1e;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// typography
+$code: Monaco, Menlo, Consolas, "Courier New", monospace;
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 300;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+@import "mixins";

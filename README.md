@@ -1,6 +1,5 @@
-Fancy jekyll powered single page site
+Fancy jekyll powered single page site now with Gulp
 ======================
 
-Here're some examples:
-
-- **This repository** is also a live demo, see it at [t413.com/SinglePaged](http://t413.com/SinglePaged)
+- **This repository** is based on [t413.com/SinglePaged](http://t413.com/SinglePaged)
+- Built with Jekyll and Gulp
