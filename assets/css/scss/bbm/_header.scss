@@ -10,6 +10,10 @@
 		display: none;
 		text-align: center;
 
+		@include respond-to(tablet) {
+			display: block !important;
+		}
+
 		ul {
 			list-style: none;
 		    text-align: center;
@@ -24,9 +28,9 @@
 				text-transform: uppercase;
 				line-height: 60px;
 				margin: 0;
-				width: 100%;
+				min-width: 100%;
 
-				@include respond-to(desktop) {
+				@include respond-to(tablet) {
 					min-width: 110px;
 				}
 
@@ -38,6 +42,19 @@
 				    opacity: 0.75;
 				}
 			}
+		}
+	}
+
+	.global-open {
+		@include font-size(1.4);
+
+		cursor: pointer;
+		display: block;
+		padding: 10px;
+		text-align: right;
+
+		@include respond-to(tablet) {
+			display: none;
 		}
 	}
 }

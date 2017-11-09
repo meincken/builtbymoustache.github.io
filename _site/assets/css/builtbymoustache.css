@@ -792,6 +792,12 @@ form {
   text-align: center;
 }
 
+@media only screen and (min-width: 767px) {
+  .global-header nav {
+    display: block !important;
+  }
+}
+
 .global-header nav ul {
   list-style: none;
   text-align: center;
@@ -807,10 +813,10 @@ form {
   text-transform: uppercase;
   line-height: 60px;
   margin: 0;
-  width: 100%;
+  min-width: 100%;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 767px) {
   .global-header nav ul li {
     min-width: 110px;
   }
@@ -822,6 +828,21 @@ form {
   text-decoration: none;
   font-weight: 600;
   opacity: 0.75;
+}
+
+.global-header .global-open {
+  font-size: 14px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  text-align: right;
+}
+
+@media only screen and (min-width: 767px) {
+  .global-header .global-open {
+    display: none;
+  }
 }
 
 .section {
